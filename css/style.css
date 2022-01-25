@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+}
+.darkMode{
+    background-color: black;
+    color: white;
+}
+.darkMode .ProblemSolution{
+  color: black;
+}
+.dark{
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+header{
+    background-color: #393e46;
+    font-size: 17px;
+}
+nav h2{
+    color: #d8ac9c;
+    float: left; 
+    line-height: 50px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    line-height: 80px;
+} 
+ul li{
+  display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:#d8ac9c;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px;
+}
+ li a:hover,a:active{
+    color:#fcecdd;
+    transition: 1s;
+    text-decoration: none;
+} 
+section{
+    margin-top: 5%;
+}
+footer{
+    background-color: #393e46;
+    font-size: 1.5em;
+    margin-top: 1%;
+    }
+footer h1{
+    line-height: 80px;
+    color: #d8ac9c;
+
+}
+footer h2{
+    line-height: 80px;
+    color: #d8ac9c;
+}
+.links a i{
+    margin: 2%;
+    color: #9e9d89;
+}
+footer p{
+    color: #9e9d89;
+}
+footer p a{
+    text-decoration: none;
+    color: #9e9d89;
+}
+footer p a:hover{
+    color: #9e9d89;
+}
+.ProblemImage{
+    width: 60%;
+    height: 70%;
+}
+.solution{
+    margin-top: 30%;
+    padding: 3%;
+}
+#heading1{
+    font-weight: bolder;
+    text-align: center;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Register</title>
+</head>
+<style>
+  
+    .partOne{
+        margin-top: 10%;
+        height: 70vh;
+    }
+    form{
+        font-size: 19px;
+    }
+    
+   form input {
+       margin: 2%;
+     
+   }
+   #register{
+       height: 130vh;
+   }
+ 
+</style>
+<body>
+    <header class="fixed-top">
+        <div class="container">
+            <nav>
+                <h2>Gjeje</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Pages/about.html">About</a></li>
+                    <li><a href="#">Lost Item</a></li>
+                    <li><a href="Pages/foundItem.html">Found Item</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="partOne">
+        <div class="container">
+          <div class="row d-inline-flex p-3">
+                <div class="col-sm-6" style="font-size: 30px; padding:5%;">
+                    <p id="para1">Have you lost something? </p>
+                        <p>We are here to help you!</p>
+                    <p> <a href="#register" class="text-danger text-decoration-none">Add your lost item here</a>
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                      <img src="../Images/4365516.jpg" alt="SadWomen" style="width: 90%;">
+                  </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="register" class="text-muted">
+        <div class="container">
+            <div class="row">
+                <legend class="text-center">Add your lost item</legend>
+
+                <form action="" class="form-horizontal">
+                    
+                     <div class="form-group">
+                      <label for="">Item</label>
+                      <input type="text"  class="form-control" required>
+                     
+                        <label for="">Brand Name</label>
+                        <input type="text"  class="form-control" required>
+                        </div>
+
+                    
+                     <div class="form-group">
+                        <label for="">Date when you have lost your item</label>
+                        <input type="date"  class="form-control" required>
+                        <label for="">Time when you have lost your item</label>
+                        <input type="time" class="form-control"  required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">Color</label>
+                        <input type="color" required >
+                        <label for="">No color</label>
+                        <input type="checkbox" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Describe your item more</label><br>
+                        <textarea name="" id="" cols="50" rows="5" placeholder="..." required ></textarea>
+                   </div>
+                   <div class="form-group">
+                        <label for="">Upload Image</label>
+                        <input type="file" accept="imgage/gif, image/jpeg, image/png" required>
+                    </div>
+                    <div class="form-group m-4 text-center">
+                        <button class="btn btn-danger btn-lg m-2">Send</button>
+                        <button class="btn btn-danger btn-lg">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> 
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <legend class="text-center">Contact Information</legend>
+
+                <form action="" class="text-muted">
+                    <div class="form-group">
+                        <label for="firstName" class="">First Name</label>
+                        <input type="text" class="form-control"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName" class="">Last Name</label>
+                        <input type="text"  class="form-control" required>
+                        </div>
+
+
+                    <div class="form-group">
+                        <label for="email" class="">Email</label>
+                        <input type="email"  class="form-control" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phoneNumber" class="">Phone Number</label>
+                        <input type="number"  class="form-control" required>
+                    </div>
+
+                    <div class="form-group m-4 text-center">
+                        <button class="btn btn-danger btn-lg m-2">Send</button>
+                        <button class="btn btn-danger btn-lg">Cancel</button>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <legend class="text-center">Location where item is lost</legend>
+
+                <form action="" class="LocationPart" style="margin-top: 3%;">
+                    <div class="form-group">
+                        <label for="" class="text-muted">Place where item was lost</label>
+                        <select name="" id="" class="form-control">
+                            <option selected>Select place</option>
+                            <option value="Taxi">Taxi</option>
+                            <option value="Restaurant">Restaurant</option>
+                            <option value="Hotel">Hotel</option>
+                            <option value="Bus">Bus</option>
+                            <option value="School">School</option>
+                            <option value="Airport">Airport</option>
+                            <option value="Park">Park</option>
+                            <option value="Others">Others...</option>
+                        </select>
+                    </div>
+                </form>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93880.44424105847!2d21.088687439189144!3d42.66635876633168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1sen!2s!4v1623432301013!5m2!1sen!2s" width="900" height="500" style="border:0;margin-top: 2%;" allowfullscreen="" loading="lazy"></iframe></p>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+
+            <div class="col-sm-4">
+                <h1>Gjeje</h1>
+            </div>
+            
+            <div class="col-sm-4">
+                <h2>Follow Us</h2>
+               <div class="links">
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-twitter"></i></a>
+               </div>
+            </div>
+
+            <div class="col-sm-4">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-phone">+383 44111222</i></p>
+                <p><i class="fas fa-envelope"><a href="mailto:email.com">email.com</a></i></p>
+            </div>
+
+            <hr>
+            <p class="text-center">&copy; 2021, Prishtine</p>
+        </div>
+        </div>
+    </footer>
+
+</body>
+</html>
